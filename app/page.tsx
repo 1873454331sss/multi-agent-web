@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const API_BASE = "https://multi-agent-production-d03b.up.railway.app";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || "";
 
 type AnalysisResult = {
   query: string;
